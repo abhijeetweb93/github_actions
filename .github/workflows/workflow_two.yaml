@@ -1,3 +1,4 @@
+name: WorkFlowTwo
 jobs:
   create-tag:
     runs-on: ubuntu-latest
