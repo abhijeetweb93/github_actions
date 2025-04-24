@@ -1,4 +1,10 @@
 name: WorkFlowTwo
+workflow_dispatch:
+  inputs:
+    branch:
+      description: 'Branch to tag from'
+      required: true
+      default: 'rel_senh_21_rc_1_nightly_build'
 jobs:
   create-tag:
     runs-on: ubuntu-latest
