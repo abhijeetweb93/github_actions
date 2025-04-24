@@ -1,0 +1,16 @@
+name: Shop-App-Android-Publish-v1
+on:
+  push:
+    tags:
+      - 'AOS-v*'
+jobs:
+  trigger-build:
+    name: Cron Job started
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running Cron job
+        run: echo "Running from cron job"
+
+      - name: Create and push tag
+        run: | 
+            echo "Create and push tag"
