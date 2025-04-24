@@ -1,8 +1,4 @@
 name: WorkFlowTwo
-on:
-  push:
-    tags:
-      - 'v*'
 jobs:
   create-tag:
     runs-on: ubuntu-latest
